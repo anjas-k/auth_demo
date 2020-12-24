@@ -1,0 +1,30 @@
+	<img class="wave" src="/images/wave.png">
+	<div class="container">
+		<div class="img">
+		</div>
+		<div class="login-content">
+			<form method="POST" action="/user/login">
+				<img src="/images/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<input type="email" name="email" class="input" placeholder="Email">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<input type="password" name="password" class="input" placeholder="Password">
+            	   </div>
+            	</div>
+					<div class="text-danger">{{displayerr}}</div>
+            	<a href="/user/register">Sign Up</a>
+            	<input type="submit" class="btn" value="Sign In" >
+            </form>
+        </div>
+    </div>
